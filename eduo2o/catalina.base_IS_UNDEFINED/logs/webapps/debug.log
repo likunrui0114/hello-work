@@ -1,0 +1,78 @@
+2020-04-25 10:12:45.937 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.AreaMapper.queryArea]use[slave]Strategy,SqlCommanType[SELECT]..
+2020-04-25 10:12:45.961 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2020-04-25 10:12:46.044 [main] DEBUG com.l319.eduo2o.mapper.AreaMapper.queryArea - ==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time from tb_area order by priority desc 
+2020-04-25 10:12:46.193 [main] DEBUG com.l319.eduo2o.mapper.AreaMapper.queryArea - ==> Parameters: 
+2020-04-25 10:12:46.320 [main] DEBUG com.l319.eduo2o.mapper.AreaMapper.queryArea - <==      Total: 4
+2020-04-25 10:15:57.175 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.PersonInfoDao.insertPersonInfo]use[master]Strategy,SqlCommanType[INSERT]..
+2020-04-25 10:15:57.181 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2020-04-25 10:15:57.195 [main] DEBUG c.l.eduo2o.mapper.PersonInfoDao.insertPersonInfo - ==>  Preparing: INSERT INTO tb_person_info(name,gender,email,profile_img,user_type, create_time,last_edit_time,enable_status) VALUES (?,?,?,?, ?,?,?,?) 
+2020-04-25 10:15:57.264 [main] DEBUG c.l.eduo2o.mapper.PersonInfoDao.insertPersonInfo - ==> Parameters: 我爱你(String), 女(String), null, null, 1(Integer), 2020-04-25 10:15:57.155(Timestamp), 2020-04-25 10:15:57.155(Timestamp), 1(Integer)
+2020-04-25 10:15:57.403 [main] DEBUG c.l.eduo2o.mapper.PersonInfoDao.insertPersonInfo - <==    Updates: 1
+2020-04-25 10:16:46.526 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.PersonInfoDao.queryPersonInfoById]use[slave]Strategy,SqlCommanType[SELECT]..
+2020-04-25 10:16:46.529 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2020-04-25 10:16:46.555 [main] DEBUG c.l.e.mapper.PersonInfoDao.queryPersonInfoById - ==>  Preparing: SELECT user_id, name, gender, email, profile_img, user_type, create_time, last_edit_time, enable_status FROM tb_person_info WHERE user_id = ? 
+2020-04-25 10:16:46.699 [main] DEBUG c.l.e.mapper.PersonInfoDao.queryPersonInfoById - ==> Parameters: 3(Long)
+2020-04-25 10:16:46.826 [main] DEBUG c.l.e.mapper.PersonInfoDao.queryPersonInfoById - <==      Total: 1
+2020-04-25 11:09:46.902 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.WechatAuthDao.insertWechatAuth]use[master]Strategy,SqlCommanType[INSERT]..
+2020-04-25 11:09:46.916 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2020-04-25 11:09:46.988 [main] DEBUG c.l.eduo2o.mapper.WechatAuthDao.insertWechatAuth - ==>  Preparing: INSERT INTO tb_wechat_auth(user_id,open_id,create_time) VALUES (?,?,?) 
+2020-04-25 11:09:47.147 [main] DEBUG c.l.eduo2o.mapper.WechatAuthDao.insertWechatAuth - ==> Parameters: 3(Long), dafahizhfdhaih(String), 2020-04-25 11:09:46.848(Timestamp)
+2020-04-25 11:09:47.400 [main] DEBUG c.l.eduo2o.mapper.WechatAuthDao.insertWechatAuth - <==    Updates: 1
+2020-04-25 11:11:03.487 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.WechatAuthDao.insertWechatAuth]use[master]Strategy,SqlCommanType[INSERT]..
+2020-04-25 11:11:03.489 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2020-04-25 11:11:03.505 [main] DEBUG c.l.eduo2o.mapper.WechatAuthDao.insertWechatAuth - ==>  Preparing: INSERT INTO tb_wechat_auth(user_id,open_id,create_time) VALUES (?,?,?) 
+2020-04-25 11:11:03.544 [main] DEBUG c.l.eduo2o.mapper.WechatAuthDao.insertWechatAuth - ==> Parameters: 3(Long), dafahizhfdhaih(String), 2020-04-25 11:11:03.464(Timestamp)
+2020-04-25 11:12:46.861 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.WechatAuthDao.insertWechatAuth]use[master]Strategy,SqlCommanType[INSERT]..
+2020-04-25 11:12:46.863 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2020-04-25 11:12:46.891 [main] DEBUG c.l.eduo2o.mapper.WechatAuthDao.insertWechatAuth - ==>  Preparing: INSERT INTO tb_wechat_auth(user_id,open_id,create_time) VALUES (?,?,?) 
+2020-04-25 11:12:46.941 [main] DEBUG c.l.eduo2o.mapper.WechatAuthDao.insertWechatAuth - ==> Parameters: 3(Long), dafahizhfdhaih(String), 2020-04-25 11:12:46.838(Timestamp)
+2020-04-25 11:12:47.020 [main] DEBUG c.l.eduo2o.mapper.WechatAuthDao.insertWechatAuth - <==    Updates: 1
+2020-04-25 11:14:04.575 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.WechatAuthDao.queryWechatInfoByOpenId]use[slave]Strategy,SqlCommanType[SELECT]..
+2020-04-25 11:14:04.578 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2020-04-25 11:14:04.604 [main] DEBUG c.l.e.mapper.WechatAuthDao.queryWechatInfoByOpenId - ==>  Preparing: SELECT w.wechat_auth_id, w.open_id, w.create_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_wechat_auth w LEFT JOIN tb_person_info p ON w.user_id = p.user_id WHERE w.open_id = ? 
+2020-04-25 11:14:04.782 [main] DEBUG c.l.e.mapper.WechatAuthDao.queryWechatInfoByOpenId - ==> Parameters: dafahizhfdhaih(String)
+2020-04-25 11:14:04.916 [main] DEBUG c.l.e.mapper.WechatAuthDao.queryWechatInfoByOpenId - <==      Total: 1
+2020-04-25 11:41:57.139 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.PersonInfoDao.insertPersonInfo]use[master]Strategy,SqlCommanType[INSERT]..
+2020-04-25 11:41:57.160 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2020-04-25 11:41:57.211 [main] DEBUG c.l.eduo2o.mapper.PersonInfoDao.insertPersonInfo - ==>  Preparing: INSERT INTO tb_person_info(name,gender,email,profile_img,user_type, create_time,last_edit_time,enable_status) VALUES (?,?,?,?, ?,?,?,?) 
+2020-04-25 11:41:57.301 [main] DEBUG c.l.eduo2o.mapper.PersonInfoDao.insertPersonInfo - ==> Parameters: null, null, null, null, null, null, null, null
+2020-04-25 11:45:41.064 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.PersonInfoDao.insertPersonInfo]use[master]Strategy,SqlCommanType[INSERT]..
+2020-04-25 11:45:41.067 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2020-04-25 11:45:41.093 [main] DEBUG c.l.eduo2o.mapper.PersonInfoDao.insertPersonInfo - ==>  Preparing: INSERT INTO tb_person_info(name,gender,email,profile_img,user_type, create_time,last_edit_time,enable_status) VALUES (?,?,?,?, ?,?,?,?) 
+2020-04-25 11:45:41.153 [main] DEBUG c.l.eduo2o.mapper.PersonInfoDao.insertPersonInfo - ==> Parameters: 测试一下(String), null, null, null, 1(Integer), 2020-04-25 11:45:41.036(Timestamp), null, 1(Integer)
+2020-04-25 11:45:41.246 [main] DEBUG c.l.eduo2o.mapper.PersonInfoDao.insertPersonInfo - <==    Updates: 1
+2020-04-25 11:45:41.286 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.WechatAuthDao.insertWechatAuth]use[master]Strategy,SqlCommanType[INSERT]..
+2020-04-25 11:45:41.290 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2020-04-25 11:45:41.292 [main] DEBUG c.l.eduo2o.mapper.WechatAuthDao.insertWechatAuth - ==>  Preparing: INSERT INTO tb_wechat_auth(user_id,open_id,create_time) VALUES (?,?,?) 
+2020-04-25 11:45:41.307 [main] DEBUG c.l.eduo2o.mapper.WechatAuthDao.insertWechatAuth - ==> Parameters: 4(Long), dafahizhfdhaih(String), 2020-04-25 11:45:41.035(Timestamp)
+2020-04-25 11:45:41.336 [main] DEBUG c.l.eduo2o.mapper.WechatAuthDao.insertWechatAuth - <==    Updates: 1
+2020-04-25 11:45:41.339 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.WechatAuthDao.queryWechatInfoByOpenId]use[slave]Strategy,SqlCommanType[SELECT]..
+2020-04-25 11:45:41.339 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2020-04-25 11:45:41.341 [main] DEBUG c.l.e.mapper.WechatAuthDao.queryWechatInfoByOpenId - ==>  Preparing: SELECT w.wechat_auth_id, w.open_id, w.create_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_wechat_auth w LEFT JOIN tb_person_info p ON w.user_id = p.user_id WHERE w.open_id = ? 
+2020-04-25 11:45:41.396 [main] DEBUG c.l.e.mapper.WechatAuthDao.queryWechatInfoByOpenId - ==> Parameters: dafahizhfdhaih(String)
+2020-04-25 11:45:41.429 [main] DEBUG c.l.e.mapper.WechatAuthDao.queryWechatInfoByOpenId - <==      Total: 1
+2020-04-25 18:47:11.548 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.LocalAuthMapper.queryLocalByUserId]use[master]Strategy,SqlCommanType[SELECT]..
+2020-04-25 18:47:11.609 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2020-04-25 18:47:11.640 [main] DEBUG c.l.e.mapper.LocalAuthMapper.queryLocalByUserId - ==>  Preparing: select l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status from tb_local_auth l left join tb_person_info p on l.user_id = p.user_id where l.user_id = ? 
+2020-04-25 18:47:11.698 [main] DEBUG c.l.e.mapper.LocalAuthMapper.queryLocalByUserId - ==> Parameters: 1(Long)
+2020-04-25 18:47:11.789 [main] DEBUG c.l.e.mapper.LocalAuthMapper.queryLocalByUserId - <==      Total: 0
+2020-04-25 18:47:11.830 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.LocalAuthMapper.insertLocalAuth]use[master]Strategy,SqlCommanType[INSERT]..
+2020-04-25 18:47:11.830 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2020-04-25 18:47:11.830 [main] DEBUG c.l.eduo2o.mapper.LocalAuthMapper.insertLocalAuth - ==>  Preparing: insert into tb_local_auth(user_name,password,user_id,create_time,last_edit_time) values(?,?,?,?,?) 
+2020-04-25 18:47:11.863 [main] DEBUG c.l.eduo2o.mapper.LocalAuthMapper.insertLocalAuth - ==> Parameters: testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String), 1(Long), 2020-04-25 18:47:11.797(Timestamp), 2020-04-25 18:47:11.797(Timestamp)
+2020-04-25 18:47:11.909 [main] DEBUG c.l.eduo2o.mapper.LocalAuthMapper.insertLocalAuth - <==    Updates: 1
+2020-04-25 18:47:11.964 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.LocalAuthMapper.queryLocalByUserId]use[slave]Strategy,SqlCommanType[SELECT]..
+2020-04-25 18:47:11.964 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2020-04-25 18:47:11.964 [main] DEBUG c.l.e.mapper.LocalAuthMapper.queryLocalByUserId - ==>  Preparing: select l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status from tb_local_auth l left join tb_person_info p on l.user_id = p.user_id where l.user_id = ? 
+2020-04-25 18:47:11.994 [main] DEBUG c.l.e.mapper.LocalAuthMapper.queryLocalByUserId - ==> Parameters: 1(Long)
+2020-04-25 18:47:12.001 [main] DEBUG c.l.e.mapper.LocalAuthMapper.queryLocalByUserId - <==      Total: 1
+2020-04-25 18:48:54.568 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.LocalAuthMapper.updateLocalAuth]use[master]Strategy,SqlCommanType[UPDATE]..
+2020-04-25 18:48:54.571 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2020-04-25 18:48:54.662 [main] DEBUG c.l.eduo2o.mapper.LocalAuthMapper.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id = ? and user_name = ? and password = ? 
+2020-04-25 18:48:54.748 [main] DEBUG c.l.eduo2o.mapper.LocalAuthMapper.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2020-04-25 18:48:54.539(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2020-04-25 18:48:54.796 [main] DEBUG c.l.eduo2o.mapper.LocalAuthMapper.updateLocalAuth - <==    Updates: 1
+2020-04-25 18:48:54.832 [main] DEBUG c.l.e.mapper.split.DynamicDataSourcesInterceptor - 设置方法[com.l319.eduo2o.mapper.LocalAuthMapper.queryLocalByUserNameAndPwd]use[slave]Strategy,SqlCommanType[SELECT]..
+2020-04-25 18:48:54.832 [main] DEBUG c.l319.eduo2o.mapper.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2020-04-25 18:48:54.834 [main] DEBUG c.l.e.m.LocalAuthMapper.queryLocalByUserNameAndPwd - ==>  Preparing: select l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status from tb_local_auth l left join tb_person_info p on l.user_id = p.user_id where l.user_name = ? and l.password = ? 
+2020-04-25 18:48:54.863 [main] DEBUG c.l.e.m.LocalAuthMapper.queryLocalByUserNameAndPwd - ==> Parameters: testusername(String), 6559sq606y6l92e9ss5qsqb5q92e566b(String)
+2020-04-25 18:48:54.957 [main] DEBUG c.l.e.m.LocalAuthMapper.queryLocalByUserNameAndPwd - <==      Total: 1

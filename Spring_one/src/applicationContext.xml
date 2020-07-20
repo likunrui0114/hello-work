@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- bean definitions here -->
+
+	<bean id="peo" class="edu.lkr.pojo.People">
+		<constructor-arg index="0" value="123"></constructor-arg>
+		<constructor-arg index="1" value="张三"></constructor-arg>
+	</bean>
+	<!-- ref引用另外一个bean value基本数据类型或String等 -->
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver"></property>
+		<property name="url"
+			value="jdbc:mysql://localhost:3307/spring?useUnicode=true&amp;characterEncoding=utf8"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="123456"></property>
+
+		<property name="initialSize" value="1"></property>
+		<property name="maxActive" value="300"></property>
+		<property name="maxIdle" value="2"></property>
+		<property name="minIdle" value="1"></property>
+	</bean>
+
+	<bean id="userService"
+		class="edu.lkr.service.impl.UserServiceImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+</beans>
